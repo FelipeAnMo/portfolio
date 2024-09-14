@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #2e2e2e;
+    color: #fff;
+    overflow-x: hidden;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+::selection {
+    background-color: #fff;
+    color: #000000;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+.col {
+    width: 50%;
+}
+
+.col-info {
+    margin-left: 5%;
+}
+
+.info-box {
+    margin-top: 34vh;
+    position: relative;
+}
+
+#name {
+    font-size: 60px;
+}
+
+#description {
+    margin: 10px 0px 0px 40px;
+    font-size: 30px;
+}
+
+#detail-top,
+#detail-bottom {
+    position: absolute;
+}
+
+#detail-top {
+    width: 24px;
+    height: 36px;
+    top: -16px;
+    left: -12px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    filter: blur(0.5px);
+}
+
+#detail-bottom {
+    width: 24px;
+    height: 36px;
+    bottom: -12px;
+    left: -12px;
+    border-bottom: 3px solid #fff;
+    border-left: 3px solid #fff;
+    filter: blur(0.5px);
+}
+
+.abilities-box {
+    margin-top: 150px;
+}
+
+.abilities-box p {
+    font-size: 28px;
+}
+
+.projects-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 28px;
+}
+
+.projects-box {
+    display: flex;
+    justify-content: center;
+}
+
+.project {
+    width: 400px;
+    height: 100px;
+    background-color: #353535;
+    margin-top: 40px;
+    border: 3px solid #fff;
+    border-radius: 18px;
+    display: flex;
+    position: relative;
+}
+
+.project:hover {
+    border: none;
+    top: 3px;
+}
+
+.project-background {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    background: rgb(131,58,180);
+    background: linear-gradient(315deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    transform: scaleX(1.015) scaleY(1.06);
+    border-radius: 18px;
+    z-index: -1;
+}
+
+.project-info {
+    width: 100%;
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project p {
+    font-size: 30px;
+    cursor: default;
+}
+
+.project-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0px 4px;
+    transition: color 300ms;
+}
+
+.project-links a:hover {
+    color: #ddd;
+}
+
+.abilities-ul {
+    margin: 30px 0px 0px 20px;
+}
+
+.abilities-ul > div {
+    width: 175px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.abilities-ul span {
+    width: 175px;
+    display: inline-block;
+}
+
+.abilities-ul div {
+    padding: 13px 0px;
+}
+
+.abilities-ul p {
+    font-size: 22px;
+    cursor: default;
+    position: relative;
+    transition: left 300ms;
+}
+
+.projects-box-mobile {
+    display: none;
+}
+
+@media (max-width: 1575px) {
+    .col-desktop {
+        display: none;
+    }    
+
+    .col-info {
+        width: 100%;
+    }
+
+    .projects-box-mobile {
+        display: block;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .abilities-box > p,
+    .projects-box-mobile > p {
+        text-align: center;
+        font-size: 28px;
+        margin-right: 5%;
+    }
+
+    .project-mobile {
+        height: 100px;
+        background-color: #353535;
+        margin-top: 40px;
+        margin-right: 5%;
+        border: 3px solid #fff;
+        border-radius: 18px;
+        display: flex;
+        position: relative;
+    }
+
+    .project-info-mobile {
+        width: 100%;
+        margin: 0px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .project-mobile p {
+        font-size: 30px;
+        cursor: default;
+    }
+
+    .project-links-mobile a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+        margin: 0px 4px;
+        transition: color 300ms;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box {
+        margin-top: 28vh;
+        margin-left: 4%;
+    }
+}
