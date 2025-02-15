@@ -3,100 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Moretzsohn | Portfolio</title>
+    <title>Felipe Moretzsohn | Portfólio</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome 6.7.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="styles/style.css">
-
-    <!-- JQuery -->
+    <!-- Jquery 3.7.1 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Script JS -->
+    <link rel="stylesheet" href="styles/style.css">
+
     <script src="scripts/script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="col col-info">
-            <div class="info-box">
-                <div id="detail-top"></div>
-                <h2 id="name">Felipe Andrade Moretzsohn</h2>
-                <p id="description">Full-Stack Developer</p>
-                <div id="detail-bottom"></div>
+    <header>
+        <div class="header-info">
+            <ul>
+                <li>
+                    <button type="button" class="nav-button" id="btn-inicio">
+                        <span>Início</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="nav-button" id="btn-sobre">
+                        <span>Sobre</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="nav-button" id="btn-habilidades">
+                        <span>Habilidades</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="nav-button" id="btn-projetos">
+                        <span>Projetos</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="header-info-mobile">
+            <div class="box-btn-mobile-header">
+                <button type="button" id="btn-show-mobile-header">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-
-            <div class="abilities-box">
-                <p>&lt; Abilities &gt;</p>
-                <div class="abilities-ul">
-                    <div>
-                        <p>
-                            <span style="color: #ff5733;">- [ HTML ]</span>
-                            <span style="color: #2965f1;">- [ CSS ]</span>
-                        </p>
+            <div class="box-nav-header-mobile">
+                <ul>
+                    <li>
+                        <button type="button" class="nav-button btn-inicio">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Início</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="nav-button btn-sobre">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Sobre</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="nav-button btn-habilidades">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Habilidades</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="nav-button btn-projetos">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Projetos</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="home-info">
+                    <p class="sub-title">Olá, me chamo</p>
+                    <h1 class="title">Felipe Moretzsohn</h1>
+                    <p class="resume">Sou estudante de Engenharia de Software e formado em Técnico em Mecatrônica pela ETEC Martin Luther King.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="sobre-habilidades">
+                    <div class="col-6">
+                        <div class="sobre-info">
+                            <h2 class="sobre-title">Sobre</h2>
+                            <div class="sobre-content">
+                                <p>
+                                    Sou um desenvolvedor full-stack PHP com mais de um ano de experiência no desenvolvimento de aplicações web. Durante esse período, atuei na implementação de novas funcionalidades, otimização de código e aprimoramento de sistemas web, garantindo maior desempenho, usabilidade e segurança.
+                                </p>
+                                <p>
+                                    Minha experiência abrange tanto o back-end, utilizando PHP 8 e o framework CodeIgniter, quanto o front-end, desenvolvendo interfaces dinâmicas com JavaScript, jQuery, HTML e CSS. Além disso, possuo conhecimento em bancos de dados relacionais como MySQL, garantindo uma estrutura eficiente e bem otimizada.
+                                </p>
+                                <p>
+                                    Estou sempre em busca de aprimorar minhas habilidades e aplicar boas práticas de desenvolvimento, entregando soluções eficientes e escaláveis para diferentes tipos de projetos.
+                                </p>
+                            </div>
+                            <div class="sobre-content-mobile">
+                                <p>
+                                    Sou um desenvolvedor full-stack PHP com mais de um ano de experiência no desenvolvimento de aplicações web. Durante esse período, atuei na implementação de novas funcionalidades, otimização de código e aprimoramento de sistemas web, garantindo maior desempenho, usabilidade e segurança.
+                                </p>
+                                <p>
+                                    Minha experiência abrange tanto o back-end, utilizando PHP 8 e o framework CodeIgniter, quanto o front-end... <span id="btn-mostrar-mais">Mostrar mais</span>
+                                </p>
+                                
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p>
-                            <span style="color: #f0db4f;">- [ Javascript ]</span>
-                            <span style="color: #78cff5;">- [ JQuery ]</span>
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <span style="color: #777bb3;">- [ PHP ]</span>
-                            <span style="color: #dd4814;">- [ Code Igniter ]</span>
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <span style="color: #cc6699;">- [ SASS ]</span>
-                            <span style="color: #7f53c3;">- [ Bootstrap ]</span>
-                        </p>
+                    <div class="col-6">
+                        <div class="habilidades-info">
+                            <h2 class="habilidades-title">Habilidades</h2>
+                            <div class="habilidades-content">
+                                <div class="habilidades-item">
+                                    <div class="habilidades-item-header">
+                                        <p class="php">PHP</p>
+                                        <i class="fa-solid fa-caret-left"></i>
+                                    </div>
+                                    <div class="habilidades-item-body">
+                                        <p>
+                                            Possuo experiência sólida em <span style="font-weight: bold;">PHP 8</span>, com conhecimento avançado na linguagem, incluindo boas práticas de desenvolvimento, orientação a objetos, manipulação de banco de dados e otimização de desempenho.
+                                        </p>
+                                        <p>
+                                            Tenho conhecimento avançado do framework <span style="font-weight: bold;">CodeIgniter</span>, utilizando-o para desenvolver aplicações escaláveis e eficientes. Minha experiência inclui a criação de sistemas robustos, implementação de padrões <span style="font-weight: bold;">MVC</span>, manipulação de rotas, configuração de middlewares e integração com banco de dados <span style="font-weight: bold;">MySQL</span>.
+                                        </p>
+                                        <p>
+                                            Além disso, possuo conhecimento básico em <span style="font-weight: bold;">Laravel</span>, compreendendo sua estrutura, rotas, middlewares e o uso de Blade para a renderização de views.
+                                        </p>
+                                    </div>
+                                </div>
+    
+                                <div class="habilidades-item">
+                                    <div class="habilidades-item-header">
+                                        <p class="js">JavaScript</p>
+                                        <i class="fa-solid fa-caret-left"></i>
+                                    </div>
+                                    <div class="habilidades-item-body">
+                                        <p>
+                                            Possuo conhecimento em <span style="font-weight: bold;">JavaScript ES6+</span>, utilizando recursos modernos da linguagem, como arrow functions, template literals, destructuring, async/await, modules e promises para desenvolver aplicações mais eficientes e organizadas. Tenho experiência na manipulação do DOM e otimização de código assíncrono, garantindo maior performance e escalabilidade nas aplicações.
+                                        </p>
+                                        <p>
+                                            Além disso, possuo boa experiência com <span style="font-weight: bold;">JQuery</span>, utilizando a biblioteca para facilitar a manipulação do DOM, eventos, animações e requisições <span style="font-weight: bold;">AJAX</span>. Tenho habilidade em desenvolver interações dinâmicas e intuitivas, otimizando a experiência do usuário e garantindo compatibilidade entre navegadores.
+                                        </p>
+                                    </div>
+                                </div>
+    
+                                <div class="habilidades-item">
+                                    <div class="habilidades-item-header">
+                                        <p class="cloud-computing">Cloud Computing</p>
+                                        <i class="fa-solid fa-caret-left"></i>
+                                    </div>
+                                    <div class="habilidades-item-body">
+                                        <p>
+                                            Possuo conhecimento intermediário em computação em nuvem, com experiência na criação e gerenciamento de máquinas virtuais (VMs) e discos de armazenamento em plataformas como <span style="font-weight: bold;">Microsoft Azure</span> e <span style="font-weight: bold;">Google Cloud</span>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Mobile view -->
-            <div class="projects-box-mobile">
-                <p>&lt; Projects &gt;</p>
-                <div class="project-mobile">
-                    <div class="project-info-mobile">
+        </div>
+    </section>
+    <section id="projetos">
+        <div class="container">
+            <div class="row row-projetos">
+                <div class="col-6">
+                    <div class="box-projeto-title">
+                        <div>
+                            <h2 class="projetos-title">Projetos</h2>
+                            <div class="projetos-detail-title"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="box-projeto">
+                        <i class="fa-solid fa-circle"></i>
                         <p>Notes</p>
-                        <div class="project-links-mobile">
-                            <a href="https://github.com/FelipeAnMo/notes" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="http://your-notes.rf.gd" target="_blank">
+                        <div class="box-link-projeto">
+                            <a href="https://github.com/FelipeAnMo/notes">
                                 <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="box-projeto">
+                        <i class="fa-solid fa-circle"></i>
+                        <p>Money Flow</p>
+                        <div class="box-link-projeto">
+                            <a style="cursor: pointer;">
+                                <i class="fa-solid fa-link-slash"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="col col-desktop">
-            <div class="projects-title">
-                <p>&lt; Projects &gt;</p>
-            </div>
-            <div class="projects-box">
-                <div class="project">
-                    <div class="project-background"></div>
-                    <div class="project-info">
-                        <p>Notes</p>
-                        <div class="project-links">
-                            <a href="https://github.com/FelipeAnMo/notes" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="http://your-notes.rf.gd" target="_blank">
-                                <i class="fa-solid fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row-footer">
+                <div class="footer-info">
+                    <p>Portfólio | Felipe Moretzsohn</p>
+                    <p>Email: felipe.moretzsohn@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/felipe-andrade-moretzsohn-aa6129251/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/FelipeAnMo" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
