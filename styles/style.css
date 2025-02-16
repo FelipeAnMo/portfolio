@@ -49,6 +49,11 @@ ol, ul {
 	list-style: none;
 }
 
+button, a {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
 blockquote, q {
 	quotes: none;
 }
